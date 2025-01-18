@@ -31,7 +31,7 @@ body {
 /* hero section start */
 .background-image {
   height: 70vh;
-  background-image: url('image/aboutus1.png');
+  background-image: url('../image/aboutus1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
