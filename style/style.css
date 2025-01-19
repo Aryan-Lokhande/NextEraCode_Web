@@ -17,6 +17,7 @@ body {
   border-bottom: 3px solid #007bff;
 }
 
+/* hero-section starts*/
 .hero-section {
   background: linear-gradient(160deg, #4f74f6, #240b3a);
   color: white;
@@ -28,6 +29,18 @@ body {
   margin-top: 20px;
 }
 
+.hero-section-btn {
+  margin-bottom: 10px;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* hero-section ends */
+
+/* footer starts */
 .follow-us a {
   text-decoration: none;
 }
@@ -35,6 +48,7 @@ body {
 footer {
   border-top: 2px #ccc solid;
 }
+/* footer ends */
 
 /* home page feature section  */
 
