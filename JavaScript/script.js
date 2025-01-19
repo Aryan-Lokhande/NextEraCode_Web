@@ -14,6 +14,24 @@ document.querySelectorAll('.faq-question').forEach(question => {
         }
     });
 });
+
+// Select all stars
+const stars = document.querySelectorAll(".star");
+// Add click event listener to each star
+stars.forEach((star, index) => {
+  star.addEventListener("click", () => {
+    // Reset all stars to regular and gray before marking
+    stars.forEach((s, i) => {
+      if (i <= index) {
+        s.classList.remove("fa-regular");
+        s.classList.add("fa-solid", "gold");
+      } else {
+        s.classList.remove("fa-solid", "gold");
+        s.classList.add("fa-regular");
+      }
+    });
+  });
+});
 // F&Q JS Ends
 
 //About us JS start
