@@ -21,6 +21,7 @@
       rel="icon"
       style="height: 16px; width: 16px"
     />
+    
   </head>
   <body>
     <!-- navbar starts -->
@@ -74,9 +75,59 @@
     <br />
     <br />
     <br />
-    <!-- faq starts -->
-        <div class="faq-container">
-      <h1 class="faq-headline">Frequently Asked Questions</h1>
+    <div class="main-container" data-aos="fade-up">
+      <!-- Contact Form -->
+      <div class="contact-form" data-aos="fade-right" data-aos-duration="2000">
+        <h2>Contact <span>Us</span></h2>
+        <p>
+          We'd love to hear from you! Please fill out the form below to get in
+          touch.
+        </p>
+        <form>
+          <input type="text" name="name" placeholder="Name *" required />
+          <input type="email" name="email" placeholder="Email *" required />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number *"
+            required
+          />
+          <select name="source">
+            <option value="">How did you find us?</option>
+            <option value="search">Search Engine</option>
+            <option value="social">Social Media</option>
+            <option value="referral">Referral</option>
+            <option value="other">Other</option>
+          </select>
+          <button type="submit">SEND</button>
+        </form>
+        <div class="contact-details">
+          <div><i class="fas fa-phone-alt"></i> +91 12345 67890</div>
+          &nbsp;
+          <div><i class="fas fa-envelope"></i> Contact@NextEraCode.com</div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container" data-aos="fade-right" data-aos-duration="2200">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.0344739699!2d73.86296739999999!3d18.52461645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1737294798601!5m2!1sen!2sin"
+          width="100%"
+          allowfullscreen=""
+          height="450"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<!-- faq starts -->    
+    <div class="faq-container">
+      <h1 class="faq-headline">Frequently Asked Questions</h1><br>
       <div class="faq-item">
         <div class="faq-question">
           <span>What services does your company offer?</span>
@@ -139,11 +190,12 @@
           </div>
         </div>
     </div>
+
+    <!-- Feedback stars -->
     <div class="container1">
       <div class="section">
-        <h2>Feedback & Rating</h2>
+        <h3>Feedback & Rating</h3>
         <textarea rows="4" placeholder="Write a feedback"></textarea>
-        <!-- Feedback stars -->
         <div class="stars">
           <i class="fa-regular fa-star star"></i>
           <i class="fa-regular fa-star star"></i>
@@ -159,7 +211,7 @@
       <hr>
 
       <div class="section">
-        <h2>Frequently Asked Questions/Discussions</h2>
+        <h3>Frequently Asked Questions/Discussions</h3>
         <textarea
           rows="2"
           placeholder="Ask a question (be specific)"
@@ -169,7 +221,7 @@
         </div>
       </div>
     </div>
-    <!-- F&Q ends -->
+    <!-- Feedback Ends -->
 
     <!-- footer starts here -->
     <footer id="contact" class="bg-dark text-white pt-4">
