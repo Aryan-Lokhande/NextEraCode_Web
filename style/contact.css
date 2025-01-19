@@ -28,7 +28,6 @@ footer {
 .faq-container {
   max-width: 690px;
   margin: 50px auto;
-  /* margin-top: -20px; */
   padding: 20px;
   color: #ddd;
   background: linear-gradient(70deg, #4f74f6, #240b3a);
@@ -74,7 +73,7 @@ footer {
 
 /* feedback and Discussion starts */
 hr{
-  color: #fff;  
+  color: white;
 }
 
 .container1 {
@@ -106,8 +105,6 @@ textarea {
   resize: none;
   margin-bottom: 10px;
 }
-
-
 
 .star {
   color: white;
