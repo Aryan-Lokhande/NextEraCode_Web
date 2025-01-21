@@ -54,3 +54,28 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(autoScrollTimeline, 3040); // Automatically scroll every 3 seconds
 });
 // About us JS Ends
+
+//Sevice us Page 
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select all "Read More" buttons
+        const buttons = document.querySelectorAll(".readmore-btn");    
+        // Add event listeners to each button
+        buttons.forEach((button) => {
+          button.textContent = "Read More"; // Initial text for the button
+          button.addEventListener("click", () => {
+            // Find the sibling "more-text" span
+            const moreText = button.closest(".info").querySelector(".more-text");
+    
+            if (moreText.style.display === "none" || !moreText.style.display) {
+              // Show the hidden text
+              moreText.style.display = "inline";
+              button.textContent = "Read Less"; // Change button text
+            } else {
+              // Hide the text
+              moreText.style.display = "none";
+              button.textContent = "Read More"; // Change button text
+            }
+          });
+        });
+      });
+// Sevice us page
